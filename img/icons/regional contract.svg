@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="78px" viewBox="0 0 61 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Regional Contract</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="First-time-contract-setup-page-Copy" transform="translate(-818.000000, -758.000000)">
+            <g id="Regional-Contract-Card" transform="translate(790.000000, 740.000000)">
+                <g id="ic_regional-contract" transform="translate(28.571429, 18.000000)">
+                    <g id="Group" stroke-width="1" fill-rule="evenodd" fill="#4A4A4A">
+                        <path d="M1.59926471,0.31741618 C0.689813676,0.402551486 -0.00393884023,1.16291069 -1.2552704e-12,2.07022517 L-1.2552704e-12,75.6882027 C9.74433611e-05,76.6562123 0.790126101,77.4409149 1.76470588,77.4410117 L37.0588235,77.4410117 C37.5254197,77.4372975 37.9715475,77.2502023 38.2996324,76.9206465 L59.4761029,55.8869387 C59.8078955,55.5610656 59.9962606,55.1179454 60,54.6544948 L60,2.07022517 C59.9999026,1.10221559 59.2098739,0.317512966 58.2352941,0.31741618 L1.76470588,0.31741618 C1.70958914,0.314847434 1.65438144,0.314847434 1.59926471,0.31741618 L1.59926471,0.31741618 Z M55.9411598,4.31548962 L55.9411598,53.3941413 L36.5293951,53.3941413 C36.4742783,53.3915726 36.4190706,53.3915726 36.3639539,53.3941413 C35.4545028,53.4792765 34.7607502,54.2396358 34.7646892,55.1469503 L34.7646892,74.4278492 L2.99998331,74.4278492 L2.99998331,4.31548962 L55.9411598,4.31548962 Z M38.9999833,57.3154896 L54.137851,57.3154896 L38.9999833,72.3513042 L38.9999833,57.3154896 L38.9999833,57.3154896 Z" id="Shape"></path>
+                    </g>
+                    <path d="M3,4 L56,4 L56,54.7142857 L35,54.7142857 L35,75 L18,75 L3,75 L3,4 Z" id="Rectangle" fill="#50C878" fill-rule="evenodd"></path>
+                    <text id="R" font-family="AvenirNext-Bold, Avenir Next" font-size="36" font-weight="bold" fill="#4A4A4A">
+                        <tspan x="17" y="42">R</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

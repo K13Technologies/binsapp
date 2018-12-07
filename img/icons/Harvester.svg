@@ -1,0 +1,32 @@
+﻿<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36" height="36" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+	<polyline fill="none" stroke="#455A64" stroke-width="4" points="31,26 40,11 44,11 	"/>
+	<path fill="#455A64" d="M15,40c0,1.104-0.896,2-2,2H9c-1.104,0-2-0.896-2-2V26c0-1.104,0.896-2,2-2h4c1.104,0,2,0.896,2,2V40z"/>
+	<path fill="#455A64" d="M41,40c0,1.104-0.896,2-2,2h-4c-1.104,0-2-0.896-2-2V26c0-1.104,0.896-2,2-2h4c1.104,0,2,0.896,2,2V40z"/>
+</g>
+<g>
+	<path fill="#FFC107" d="M12,5v1.334C12,7.807,13.194,9,14.667,9h18.667C34.807,9,36,7.807,36,6.334V5H12z"/>
+	<rect x="6" y="30" fill="#FFC107" width="36" height="12"/>
+	<rect x="15" y="27.002" fill="#FFC107" width="18" height="3"/>
+</g>
+<polygon fill="#C5CAE9" points="32,26 16,26 15,10 33,10 "/>
+<path fill="#37474F" d="M31.886,11l-0.777,14H16.892l-0.778-14H31.886 M34,9H14l1,18h18L34,9L34,9z"/>
+<g>
+	<rect x="4" y="30" fill="#BC8413" width="4" height="12"/>
+	<rect x="22" y="30" fill="#BC8413" width="4" height="12"/>
+	<rect x="4" y="35" fill="#BC8413" width="40" height="2"/>
+	<rect x="4" y="40" fill="#BC8413" width="40" height="2"/>
+	<rect x="4" y="30" fill="#BC8413" width="40" height="2"/>
+	<rect x="40" y="30" fill="#BC8413" width="4" height="12"/>
+</g>
+<g>
+	<path fill="#263238" d="M18,30v-4c0-0.553-0.448-1-1-1h-3c-0.552,0-1,0.447-1,1v4H18z"/>
+	<path fill="#263238" d="M35,30v-4c0-0.553-0.447-1-1-1h-3c-0.553,0-1,0.447-1,1v4H35z"/>
+</g>
+<path fill="#7986CB" d="M21.43,25C21.165,24.703,21,24.363,21,24c0-1.084,1.374-2,3-2s3,0.916,3,2c0,0.363-0.164,0.703-0.43,1h2.252
+	C28.927,24.679,29,24.348,29,24c0-2.206-2.243-4-5-4s-5,1.794-5,4c0,0.348,0.073,0.679,0.178,1H21.43z"/>
+<g>
+	<circle fill="#FFF8E1" cx="15.5" cy="27.5" r="1.5"/>
+	<circle fill="#FFF8E1" cx="32.5" cy="27.5" r="1.5"/>
+</g>
+</svg>
