@@ -22,12 +22,18 @@ module.exports = function(grunt) {
 
 	var initObj = {
 		pkg: grunt.file.readJSON('package.json'),
+		dist: dist,
+		buildPathCSS: buildPathCSS,
+		buildPathJS: buildPathJS,
+		buildPathIMG: buildPathIMG,
+		buildPathHTML: buildPathHTML,
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// WATCH
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		watch: {
 			options: {
+				interval: 800,
 				livereload: true
 			},
 			html: {
@@ -69,7 +75,7 @@ module.exports = function(grunt) {
 					'build/css/binsapp.css': [
 						'css/jquery-ui.min.css',
 						'css/bootstrap.min.css',
-						'DataTables/datatables.css',
+						'vendor/DataTables/datatables.css',
 						'css/style.css'
 					]
 				}
