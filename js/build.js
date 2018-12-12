@@ -9,6 +9,6 @@
 
 @import 'bootstrap-password-toggler.js';
 
-@import '../DataTables/datatables.js';
+@import '../vendor/DataTables/datatables.js';
 
 @import 'webapp.js';
