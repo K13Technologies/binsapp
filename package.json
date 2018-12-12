@@ -1,7 +1,7 @@
 {
   "name": "binsapp",
   "version": "1.0.0",
-  "description": "Material Design for Bootstrap",
+  "description": "Farmers Bins App Prototype",
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {

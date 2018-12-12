@@ -1,11 +1,15 @@
 /* YOUR CUSTOM STYLES */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+.navbar {
+  margin-bottom: 50px;
+}
+
 .navbar-nav,
 .navbar-nav .nav-link {
-  margin: 0;
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .navbar-nav .nav-item.nav-user {
@@ -13,16 +17,16 @@
 }
 
 .main-container {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .icon-link {
-	display: inline-block;
+  display: inline-block;
 }
 
 .icon {
-	width: 36px;
-	height: 36px;
+  width: 36px;
+  height: 36px;
 }
 
 .icon-index {
@@ -31,22 +35,22 @@
 }
 
 .white {
-	padding-top: 30px;
-	color: white;
+  padding-top: 30px;
+  color: white;
 }
 
 .white80 {
-	padding-top: 80px;
-	color: white;
+  padding-top: 80px;
+  color: white;
 }
 
 .white120 {
-	padding-top: 120px;
-	color: white;
+  padding-top: 120px;
+  color: white;
 }
 
 .top {
-	padding-top: 80;
+  padding-top: 80;
 }
 
 .black {
@@ -71,8 +75,8 @@
 }
 
 .search-icon {
-	width: 18px;
-	height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .owl {
@@ -86,21 +90,21 @@
 }
 
 .margin-bottom-md {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 
 }
 
 .right2left{
-	direction: rtl;
+  direction: rtl;
 }
 
 .text-margin {
-	margin-left: 60px
-	margin-bottom: 60px;
+  margin-bottom: 60px;
+  margin-left: 60px;
 }
 
 .text-align {
-	text-align: center;
+  text-align: center;
 }
 
 .row-grid {
@@ -108,38 +112,38 @@
 }
 
 .green {
-	color: green;
+  color: green;
 }
 
 .red {
-	color: red;
+  color: red;
 }
 
 .binsBtn {
-	font-size: 18px;
-	padding: 10px 25px;
-	border-radius: 4px !important;
-	border: 0;
-	color: #fff;
-	cursor: pointer;
-	font-weight: bold;
-	position: relative;
-	background: #212121;
-	white-space: nowrap;
-	display: inline-block;
-	text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #212121;
+  border: 0;
+  border-radius: 4px !important;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .th {
-	text-align: center;
+  text-align: center;
 }
 
 .td {
-	text-align: left;
+  text-align: left;
 }
 
 .tr {
-	text-align: left;
+  text-align: left;
 }
 
 /* unvisited link */
@@ -162,7 +166,7 @@ a:hover, a:active {
 
 
 .noDecoration {
-	text-decoration: none!important;
+  text-decoration: none!important;
 
 }
 
@@ -299,24 +303,24 @@ a:hover, a:active {
 hr {
     display: block;
     margin-top: 0.5em;
+    margin-right: auto;
     margin-bottom: 0.5em;
     margin-left: auto;
-    margin-right: auto;
     border-width: 2px;
 }
 
 .divider {
-  height: 1px;
-  width:100%;
   display:block; /* for use on default inline elements like span */
+  width:100%;
+  height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
 
 .div {
-	height: 30;
-	margin: auto;
+  height: 30;
+  margin: auto;
 }
 
 .shadow {
@@ -326,12 +330,12 @@ hr {
 }
 
 .search-name {
-	color: #d32f2f;
+  color: #d32f2f;
 }
 
 .contract {
-	font-size: 14px;
-	font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .card-2 {
@@ -343,15 +347,15 @@ hr {
 }
 
 .commodity {
-	font-style: italic;
+  font-style: italic;
 }
 
 .back-button {
-	background-color: #536DFE;
+  background-color: #536DFE;
 }
 
 .upgrade {
-	background-color: #50C878;
+  background-color: #50C878;
 }
 
 .upgrade-button {
@@ -362,8 +366,8 @@ hr {
   font-family: Avenir;
   font-size: 36px;
   font-weight: bold;
-  font-style: x-large;
   color: #4a4a4a;
+  font-style: x-large;
 }
 
 .active-bin-smal {
@@ -371,13 +375,13 @@ hr {
   font-family: Avenir;
   font-size: 12px;
   font-weight: normal;
-  font-style: normal;
   color: #4a4a4a;
+  font-style: normal;
 }
 
 .special {
-	display: block;
-	float: left;
+  display: block;
+  float: left;
 }
 
 .load-card {
@@ -387,39 +391,38 @@ hr {
 }
 
 .align {
-	padding-left: 100px !important;
+  padding-left: 100px !important;
 }
 
 .progress-info {
-	color: #d32f2f !important;
+  color: #d32f2f !important;
 }
 
 .vertical-align {
-	vertical-align: center;
+  vertical-align: center;
 }
 
 .membership {
-	text-align: left;
+  text-align: left;
 }
 
 .profile-thumbnail {
-	height: 75px;
-	width: 75px;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 textarea {
+    box-sizing: border-box;
     width: 100%;
     height: 150px;
     padding: 12px 20px;
-    box-sizing: border-box;
+    overflow: auto;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: ;
-    font-size: 16px;
     resize: both;
-    overflow: auto;
 }
 
 .btn-file {
@@ -427,66 +430,66 @@ textarea {
   overflow: hidden;
 }
 
-.btn-file input[type=file]{
+.btn-file input[type='file']{
+  display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  opacity: 0;
   min-width: 100%;
   min-height: 100%;
+  top: 0;
+  right: 0;
   font-size: 100px;
   text-align: right;
-  filter: alpha(opacity=0);
-  opacity: 0;
-  outline: none;
   background: white;
+  filter: alpha(opacity=0);
+  outline: none;
   cursor: inherit;
-  display: block;
 
 }
 
 .simple-steps {
   width: 259px;
   height: 19px;
-  object-fit: contain;
   font-family: AvenirNext;
   font-size: 14px;
   font-weight: normal;
+  color: #4a4a4a;
+  object-fit: contain;
   font-style: normal;
   font-stretch: normal;
-  color: #4a4a4a;
 }
 
 .main-menu {
   height: 19px;
-  object-fit: contain;
   font-size: 14px;
   font-weight: normal;
+  color: #4a4a4a;
+  object-fit: contain;
   font-style: normal;
   font-stretch: normal;
-  color: #4a4a4a;
 }
 
 
 .viewed {
   width: 92px;
   height: 16px;
+  padding-top: 15px;
   font-size: 14px;
   font-weight: normal;
+  color: #4a4a4a;
   font-style: normal;
   font-stretch: normal;
-  color: #4a4a4a;
-  padding-top: 15px;
 }
 
 .copyright {
-  font-size: 12: 12px;
+  font-size: 12px;
 }
 
 /* Match any class name that starts with icon */
 [class^="icon"] {
+  position: relative;
   width: 36px;
   height: 36px;
-  position: relative;
   top: 15px;
   margin-right: 10px;
   fill: #fff;
