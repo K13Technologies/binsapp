@@ -2,7 +2,7 @@
 module.exports = function(grunt) {
 	'use strict';
 
-	var dist =  'binsapp',
+	var dist =  'easyfarm',
 			buildPathHTML = 'build/',
 			buildPathCSS =  'build/css/',
 			buildPathJS =  'build/js/',
@@ -50,6 +50,15 @@ module.exports = function(grunt) {
 			}
 		},
 
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// CLEAN - DELETES FILES
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+		clean: {
+			builddir: {
+				src: ['build/**/*']
+			}
+		},
+
 		//////////////////////////////////////////////////////////////////////////////////////////
 		// HTMLBUILD
 		//////////////////////////////////////////////////////////////////////////////////////////
@@ -72,7 +81,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			target: {
 				files: {
-					'build/css/binsapp.css': [
+					'build/css/easyfarm.css': [
 						'css/jquery-ui.min.css',
 						'css/bootstrap.min.css',
 						'vendor/DataTables/datatables.css',
@@ -118,7 +127,6 @@ module.exports = function(grunt) {
 			js: {
 				files: [{
 					src: [
-						'node_modules/jquery/dist/jquery.min.js',
 						buildPathJS+'build.js'
 					],
 					dest: '<%= buildPathJS %><%= dist %>.js'
@@ -154,18 +162,32 @@ module.exports = function(grunt) {
 		// IMAGE MIN
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		imagemin: {
-			options: {
-				optimizationLevel: 3,
-				svgoPlugins: [{ removeViewBox: false }]
+			content: {
+				options: {
+					optimizationLevel: 3,
+					svgoPlugins: [{ removeViewBox: false }]
+				},
+				files: [{
+					expand: true,
+					cwd: 'img/',
+					src: ['**/*.{png,jpg,gif,svg}'],
+					dest: buildPathIMG,
+					rename: function(dest, src) {
+						return buildPathIMG + src;
+					}
+				}]
 			},
-			files: {
-				expand: true,
-				cwd: 'img/',
-				src: ['**/*.{png,jpg,gif,svg}'],
-				dest: buildPathIMG,
-				rename: function(dest, src) {
-					return buildPathIMG + src;
-				}
+			css: {
+				options: {
+					optimizationLevel: 3,
+					svgoPlugins: [{ removeViewBox: false }]
+				},
+				files: [{
+					expand: true,
+					cwd: 'vendor/DataTables/DataTables-1.10.13/',
+					src: ['images/*.{png,jpg,gif,svg}'],
+					dest: buildPathCSS
+				}]
 			}
 		},
 
@@ -177,6 +199,7 @@ module.exports = function(grunt) {
 
 	// Load plugins
 	grunt.loadNpmTasks('grunt-import');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -191,8 +214,10 @@ module.exports = function(grunt) {
 	grunt.registerTask('cleanup', ['clean:builddir']);
 	grunt.registerTask('build',
 		['cleanup',
+			'htmlbuild',
+			'imagemin',
 			'css',
-			'js'
+			'js',
 		]);
 
 };

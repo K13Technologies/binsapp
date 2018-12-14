@@ -11,4 +11,6 @@
 
 @import '../vendor/DataTables/datatables.js';
 
+@import '../vendor/DataTables/DataTables-1.10.13/js/datatables.bootstrap.js';
+
 @import 'webapp.js';
