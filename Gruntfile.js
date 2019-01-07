@@ -85,6 +85,7 @@ module.exports = function(grunt) {
 						'css/jquery-ui.min.css',
 						'css/bootstrap.min.css',
 						'vendor/DataTables/datatables.css',
+						'css/braintree.css',
 						'css/style.css'
 					]
 				}

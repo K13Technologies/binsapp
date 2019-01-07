@@ -105,4 +105,8 @@ $(document).ready(function() {
 		}
 	}
 
+	if(/add-card=success/.test(window.location.href)) {
+		$('#success-message').show();
+	}
+
 });

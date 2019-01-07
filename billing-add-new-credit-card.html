@@ -26,23 +26,34 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-<form id="checkout-form" action="/transaction-endpoint" method="post">
+<form id="checkout-form" action="?add-card=success" method="post">
   <div id="error-message"></div>
+  <div id="success-message" class="alert alert-success">
+    New Credit Card Added!
+  </div>
 
 
-  <label for="card-number">Card Number</label>
-  <div class="hosted-field" id="card-number"></div>
+  <div class="card-ctr">
+    <label for="card-number">Card Number</label>
+    <div class="hosted-field" id="card-number"></div>
+  </div>
 
-  <label for="cvv">CVV</label>
+  <div class="cvv-ctr">
+    <label for="cvv">CVV</label>
+    <div class="hosted-field" id="cvv"></div>
+  </div>
 
-  <div class="hosted-field" id="cvv"></div>
 
+  <div>
+    <label for="expiration-date">Expiration Date</label>
+    <div class="hosted-field" id="expiration-date"></div>
+  </div>
 
-  <label for="expiration-date">Expiration Date</label>
-  <div class="hosted-field" id="expiration-date"></div>
+  <div class="btn-ctr">
+    <input type="hidden" name="payment-method-nonce">
+    <input class="btn btn-lg btn-success" type="submit" value="Add" disabled>
+  </div>
 
-  <input type="hidden" name="payment-method-nonce">
-  <input type="submit" value="Pay $10" disabled>
 </form>
 
 <!-- Load the Client component. -->
@@ -104,17 +115,12 @@ braintree.client.create({
 });
 </script>
 
-<div class="col-md-4">
-<p>text2</p>
-</div>
-
 </div>
 </div>
 
 
   <!-- SCRIPTS -->
   <script async src="/js/easyfarm.js"></script>
-
 
 
 
