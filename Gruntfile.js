@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 				livereload: true
 			},
 			html: {
-				files: ['*.html'],
+				files: ['*.html', 'templates/*.html'],
 				tasks: ['htmlbuild']
 			},
 			css: {
@@ -177,6 +177,11 @@ module.exports = function(grunt) {
 						return buildPathIMG + src;
 					}
 				}]
+			},
+			icon: {
+				files: {
+					'build/favicon.ico': ['favicon.ico']
+				}
 			},
 			css: {
 				options: {
