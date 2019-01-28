@@ -5,13 +5,6 @@ $(document).ready(function() {
 
 	$('.extra-info').hide();
 
-	$('#commodity').on('input', function(e) {
-		$('.extra-info').hide();
-
-		var currentCommodity = $('#commodity').val();
-
-		$('#' + currentCommodity).show();
-	})
 
 	// This function is found on step 1 of bin setup. The intent is that each auto-complete commodity creates a drop down of that commodity details if the human consumption radio button is selected.
 
@@ -43,7 +36,15 @@ $(document).ready(function() {
 	];
 
 	$("#commodity").autocomplete({
-		source: availableCommodity
+		source: availableCommodity,
+		select: function(event, ui) {
+
+			var currentCommodity = ui.item.value;
+
+			$('.extra-info').hide();
+
+			return $('#radio11').is(':checked') && $('#' + currentCommodity).show() || 1;
+		}
 	});
 
 	// These functions can be found on setp 1 of bin setup

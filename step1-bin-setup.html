@@ -2,1070 +2,960 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>Step 1-bin Setup</title>
-    <link href="/css/easyfarm.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Step 1-bin Setup</title>
+  <link href="/css/easyfarm.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- build:section header -->
+  <!-- /build -->
 
-  <!-- build:section header --><!-- /build -->
+    <!-- Start of page 1 bin creation -->
+    <!-- step 1 -->
+  <div id="step1" class="steps container">
+    <!--Start of red progress bar section -->
+    <div class="row g-mb-30">
+      <div class="col-md-10">
+        <progress class="progress progress-info" value="20" max="100" aria-describedby="example-caption-1"></progress>
+        <div class="text-xs-center lead" id="example-caption-1">Add Bin (Step 1 of 5)</div>
+      </div>
+    </div>
+    <!-- End of red progress bar section-->
+    <div class="row">
+      <div class="col-md-3">
+        <!-- This starts the name your BIN NAME input -->
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Bin Name</label>
+            <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. Bin #12">
+          </div>
+        </form>
+        <!-- This ENDS the name your BIN NAME input -->
+      </div>
+      <div class="col-md-3">
+        <p>Max Bushels</p>
+      </div>
+      <div class="col-md-3">
+        <p>Max Metric Tons</p>
+      </div>
+    </div>
+    <!--This ends the first row of input buttons-->
+    <div class="row">
+      <div class="col-md-3">
+        <!-- This starts the select unit drop down input -->
+        <form>
+          <div class="form-group">
+            <label for="exampleSelect1">Select Unit</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>Bushels</option>
+              <option>CWT</option>
+              <option>Lbs</option>
+              <option>Metric Ton</option>
+              <option>Short Ton</option>
+              <option>Long Tonne</option>
+            </select>
+          </div>
+        </form>
+        <!-- This ENDS the select unit drop down input -->
+      </div>
+      <div class="col-md-3">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Units Stored</label>
+            <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. 25,000 bushels">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Units For Sale</label>
+            <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. 10,000">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form class="form-inline">
+          <label>To be sold as: (Select one)</label>
+          <fieldset class="form-group">
+            <input name="group1" type="radio" id="radio11" checked="checked">
+            <label for="radio11">
+              Human Consumption & Milling</label>
+          </fieldset>
+          <fieldset class="form-group">
+            <input name="group1" type="radio" id="radio21">
+            <label for="radio21">Feed</label>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <!--This ends the third row of input buttons-->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="commodity">Commodity</label>
+          <input id="commodity" type="text" class="form-control input-lg" placeholder="e.g. Corn">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- This is the start of Start of Storage period Calendar drop down-->
+        <div class="form-group">
+          <label for="datepickerstoragestart">Start of Storage</label>
+          <input placeholder="Selected date" type="text" id="datepickerstoragestart" class="form-control datepicker input-lg">
+          <!-- This is the END of Start of Storage period Calendar drop down-->
+        </div>
+      </div>
+      <div class="col-md-3">
+        <!-- This is the start of Pick Your Delivery Month Calendar drop down-->
+        <div class="form-group">
+          <label for="datepickerdeliverymonth">Pick Delivery Month</label>
+          <input placeholder="Selected date" type="text" id="datepickerdeliverymonth" class="form-control datepicker input-lg">
+        </div>
+        <!-- This is the END of Pick Your Delivery Month Calendar drop down-->
+      </div>
+    </div>
+  </div>
+  <!--This ends the fourth row of input buttons-->
+  <!-- User selects Peas -->
+  <div id="Peas" class="extra-info container">
+    <div class="row">
+      <div class="col-md-9">
+        <h5>Peas</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Color</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Good</option>
+                  <option>Fair</option>
+                  <option>Poor</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Splits</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Bleached</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selcts Beans -->
+  <div id="Beans" class="extra-info container">
+    <div class="row">
+      <div class="col-md-9">
+        <h5>Beans</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Color</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Good</option>
+                  <option>Fair</option>
+                  <option>Poor</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Splits</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Bleached</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--User selects Chickpeas -->
+  <div id="Chickpeas" class="extra-info container">
+    <div class="row">
+      <div class="col-md-9">
+        <h5>Chickpeas</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Color</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Good</option>
+                  <option>Fair</option>
+                  <option>Poor</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Splits</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Bleached</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Fababeans -->
+  <div id="Fababeans" class="extra-info container">
+    <div class="row">
+      <div class="col-md-9">
+        <h5>Fababeans</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Color</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Good</option>
+                  <option>Fair</option>
+                  <option>Poor</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Splits</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Bleached</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects sunflowers -->
+  <div id="Sunflowers" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Sunflowers</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Headrot</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Green Count</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Percentage Dehulled</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Barley -->
+  <div id="Barley" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Barley</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Variety</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Protein</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Germination</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Chitted</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Malt Barley -->
+  <div id="Malt Barley" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Malt Barley</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Variety</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Protein</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Germination</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Chitted</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Canola -->
+  <div id="Canola" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Canola</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Variety</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Green Count</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Sclerotinia</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Wheat -->
+  <div id="Wheat" class="extra-info container">
+    <div class="row">
+      <div class="col-md-10">
+        <h5>Wheat</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Falling #</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Protein</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">HVK</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Vomitoxin(DON)</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0 PPM">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Buckwheat -->
+  <div id="Buckwheat" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Buckwheat</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Size</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Small</option>
+                  <option>Large</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Immature</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Dehulled (%)</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Oats -->
+  <div id="Oats" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Oats</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Hull</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Hulled</option>
+                  <option>Hulless</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Frost Damage</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Green Count</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grains (Other)</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Soybeans -->
+  <div id="Soybeans" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Soybeans</h5>
+        <div class="row">
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Color</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Green</option>
+                  <option>Brown</option>
+                  <option>Black</option>
+                  <option>Yellow</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Splits</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Safflower -->
+  <div id="Safflower" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Safflower</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="exampleSelect1">Select Color</label>
+                <select class="form-control input-lg" id="exampleSelect1">
+                  <option>Green</option>
+                  <option>Brown</option>
+                  <option>Black</option>
+                  <option>Yellow</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Dehulled</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Empty Hulles</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Millet -->
+  <div id="Millet" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Millet</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Amaranth -->
+  <div id="Amaranth" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Amaranth</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Chia -->
+  <div id="Chia" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Chia</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Sesame -->
+  <div id="Sesame" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Sesame</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Quinoa -->
+  <div id="Quinoa" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Quinoa</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Corn -->
+  <div id="Corn" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Corn</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Triticale -->
+  <div id="Triticale" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Triticale</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Rye -->
+  <div id="Rye" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Rye</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Flax -->
+  <div id="Flax" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Flax</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Lentils -->
+  <div id="Lentils" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Lentils</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Pumpkins -->
+  <div id="Pumpkins" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Pumpkins</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- User selects Peanuts -->
+  <div id="Peanuts" class="extra-info container">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>Peanuts</h5>
+        <div class="row">
+          <div class="col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Grade</label>
+                <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-<!-- Start of page 1 bin creation -->
-
-<!-- Start of page 1 bin creation -->
-
-
-<!--Start of red progress bar section -->
-<div id="step1" class="steps container"> <!-- step 1 -->
-<div class="row">
-<div class="col-md-9">
-</div>
-<div class="row">
-</div>
-<div class="col-md-1">
-</div>
-    <div class="col-md-10">
-    <progress class="progress progress-info" value="20" max="100" aria-describedby="example-caption-1"></progress>
-    <div class="text-xs-center lead" id="example-caption-1">Add Bin (Step 1 of 5)</div>
-  </div>
-<div class="col-md-1">
-</div>
-</div>
-<!-- End of red progress bar section-->
-
-
-</div>
-<!-- End of 1st section of build bin progress bar -->
-
-<div class="container white80">
-</div>
-
-<div class="container">
-<div class="row">
-<div class="col-md-9">
-<div class="row">
-<div class="col-md-3">
-<!-- This starts the name your BIN NAME input -->
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Bin Name</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. Bin #12">
-  </div>
-  </form>
-<!-- This ENDS the name your BIN NAME input -->
-</div>
-<div class="col-md-1">
-</div>
-    <div class="col-md-3">
-    <p>Max Bushels</p>
-</div>
-    <div class="col-md-1">
-</div>
-    <div class="col-md-3">
-    <p>Max Metric Tons</p>
-</div>
-  <div class="col-md-1">
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<!--This ends the first row of input buttons-->
-<div class="container row-grid">
-<div class="row">
-<div class="col-md-9 top">
-<div class="row">
-<div class="col-md-3">
-<!-- This starts the select unit drop down input -->
-<form>
-<div class="form-group">
-    <label for="exampleSelect1">Select Unit</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>Bushels</option>
-      <option>CWT</option>
-      <option>Lbs</option>
-      <option>Metric Ton</option>
-      <option>Short Ton</option>
-      <option>Long Tonne</option>
-    </select>
-  </div>
-  </form>
-<!-- This ENDS the select unit drop down input -->
-</div>
-<div class="col-md-1">
-</div>
-<div class="col-md-3">
-
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Units Stored</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. 25,000 bushels">
-  </div>
-  </form>
-
-</div>
-<div class="col-md-1">
-</div>
-<div class="col-md-3">
-
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Units For Sale</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. 10,000">
-  </div>
-  </form>
-
-</div>
-<div class="col-md-1">
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<!--This ends the Second row of input buttons-->
-<div class="container row-grid">
-<div class="row">
-<div class="col-md-9">
-<div class="row">
-<div class="col-md-6">
-<form class="form-inline">
-<label>To be sold as: (Select one)</label>
-
-    <fieldset class="form-group">
-        <input name="group1" type="radio" id="radio11" checked="checked">
-        <label for="radio11">
-        Human Consumption & Milling</label>
-    </fieldset>
-
-    <fieldset class="form-group">
-        <input name="group1" type="radio" id="radio21">
-        <label for="radio21">Feed</label>
-    </fieldset>
-</form>
-</div>
-<div class="col-md-2">
-</div>
-<div class="col-md-4">
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<!--This ends the third row of input buttons-->
-<div class="container row-grid"> <!-- row-grid pushes everything down by 80px-->
-<div class="row">
-<div class="col-md-12">
-<div class="row">
-<div class="col-md-3">
-
-
-  <div class="form-group">
-    <label for="commodity">Commodity</label>
-    <input id="commodity" type="text" class="form-control input-lg" placeholder="e.g. Corn">
-  </div>
-
-
-</div>
-
-<div class="col-md-3">
-<!-- This is the start of Start of Storage period Calendar drop down-->
-<div class="form-group">
-    <label for="datepickerstoragestart">Start of Storage</label>
-    <input placeholder="Selected date" type="text" id="datepickerstoragestart" class="form-control datepicker input-lg">
-<!-- This is the END of Start of Storage period Calendar drop down-->
-</div>
-</div>
-
-<div class="col-md-3">
-<!-- This is the start of Pick Your Delivery Month Calendar drop down-->
-<div class="form-group">
-    <label for="datepickerdeliverymonth">Pick Delivery Month</label>
-    <input placeholder="Selected date" type="text" id="datepickerdeliverymonth" class="form-control datepicker input-lg">
-</div>
-<!-- This is the END of Pick Your Delivery Month Calendar drop down-->
-</div>
-
-
-</div>
-</div>
-</div>
-</div>
-<!--This ends the fourth row of input buttons-->
-
-
-
-
-<!-- User selects Peas -->
-<div id="Peas" class="extra-info container">
-<div class="row">
-<div class="col-md-9">
-<h5>Peas</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Color</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Good</option>
-      <option>Fair</option>
-      <option>Poor</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Splits</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Bleached</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selcts Beans -->
-<div id="Beans" class="extra-info container">
-<div class="row">
-<div class="col-md-9">
-<h5>Beans</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Color</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Good</option>
-      <option>Fair</option>
-      <option>Poor</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Splits</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Bleached</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
- <!--User selects Chickpeas -->
-<div id="Chickpeas" class="extra-info container">
-<div class="row">
-<div class="col-md-9">
-<h5>Chickpeas</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Color</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Good</option>
-      <option>Fair</option>
-      <option>Poor</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Splits</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Bleached</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Fababeans -->
-<div id="Fababeans" class="extra-info container">
-<div class="row">
-<div class="col-md-9">
-<h5>Fababeans</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g.">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Color</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Good</option>
-      <option>Fair</option>
-      <option>Poor</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Splits</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Bleached</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects sunflowers -->
-<div id="Sunflowers" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Sunflowers</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Headrot</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Green Count</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Percentage Dehulled</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Barley -->
-<div id="Barley" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Barley</h5>
-<div class="row">
-<div class="col-md-2">
-    <form>
-    <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-    <form>
-    <div class="form-group">
-    <label for="formGroupExampleInput">Variety</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Protein</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Germination</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Chitted</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Malt Barley -->
-<div id="Malt Barley" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Malt Barley</h5>
-<div class="row">
-<div class="col-md-2">
-    <form>
-    <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-    <form>
-    <div class="form-group">
-    <label for="formGroupExampleInput">Variety</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Protein</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Germination</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Chitted</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Canola -->
-<div id="Canola" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Canola</h5>
-<div class="row">
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Variety</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Green Count</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Sclerotinia</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Wheat -->
-<div id="Wheat" class="extra-info container">
-<div class="row">
-<div class="col-md-10">
-<h5>Wheat</h5>
-<div class="row">
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Falling #</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Protein</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">HVK</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Vomitoxin(DON)</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0 PPM">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Buckwheat -->
-<div id="Buckwheat" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Buckwheat</h5>
-<div class="row">
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Size</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Small</option>
-      <option>Large</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Immature</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Dehulled (%)</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Oats -->
-<div id="Oats" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Oats</h5>
-<div class="row">
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Hull</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Hulled</option>
-      <option>Hulless</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Frost Damage</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Green Count</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grains (Other)</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Soybeans -->
-<div id="Soybeans" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Soybeans</h5>
-<div class="row">
-<div class="col-md-2">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Color</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Green</option>
-      <option>Brown</option>
-      <option>Black</option>
-      <option>Yellow</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-2">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Splits</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Safflower -->
-<div id="Safflower" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Safflower</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-    <form>
-    <div class="form-group">
-    <label for="exampleSelect1">Select Color</label>
-    <select class="form-control input-lg" id="exampleSelect1">
-      <option>Green</option>
-      <option>Brown</option>
-      <option>Black</option>
-      <option>Yellow</option>
-    </select>
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Dehulled</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-<div class="col-md-3">
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Empty Hulles</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="0%">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Millet -->
-<div id="Millet" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Millet</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Amaranth -->
-<div id="Amaranth" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Amaranth</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Chia -->
-<div id="Chia" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Chia</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Sesame -->
-<div id="Sesame" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Sesame</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Quinoa -->
-<div id="Quinoa" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Quinoa</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Corn -->
-<div id="Corn" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Corn</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Triticale -->
-<div id="Triticale" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Triticale</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Rye -->
-<div id="Rye" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Rye</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Flax -->
-<div id="Flax" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Flax</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Lentils -->
-<div id="Lentils" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Lentils</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Pumpkins -->
-<div id="Pumpkins" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Pumpkins</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- User selects Peanuts -->
-<div id="Peanuts" class="extra-info container">
-<div class="row">
-<div class="col-md-12">
-<h5>Peanuts</h5>
-<div class="row">
-<div class="col-md-3">
-  <form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Grade</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="e.g. U.S. 1">
-  </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div class="container">
-<div class="row">
-<div class="col-md-offset-6 col-md-6">
-<div>
-<div class="row">
-<div class="col-md-3">
-<button class=" back-button click binsBtn" style=" width:100px" onclick="window.location.href='index.html'">
-            Back
-          </button>
-</div>
-<div class="row">
-<div class="col-md-2">
-<button class="click binsBtn" style=" width:100px" onclick="window.location.href='step2-bin-setup.html'">
-            Next
-          </button>
-</div>
-
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-<!-- End of page 1 bin creation page -->
-
-<!-- End of page 1 bin creation page -->
-
-<!-- SCRIPTS -->
-<script async src="/js/easyfarm.js"></script>
-
-
-
-
-
-
-
-
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <button class=" back-button click binsBtn" style=" width:100px" onclick="window.location.href='index.html'">
+          Back
+        </button>
+      </div>
+      <div class="col-xs-3 offset-md-4 offset-xs-6">
+        <button class="click binsBtn" style=" width:100px" onclick="window.location.href='step2-bin-setup.html'">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- SCRIPTS -->
+  <script async src="/js/easyfarm.js"></script>
 </body>
 
 </html>

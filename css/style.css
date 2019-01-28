@@ -505,3 +505,7 @@ textarea {
   float: left;
   margin-right: 1rem;
 }
+
+.form-inline .form-group ~ .form-group {
+  margin-left: 2em;
+}

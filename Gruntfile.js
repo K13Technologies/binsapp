@@ -193,6 +193,12 @@ module.exports = function(grunt) {
 					cwd: 'vendor/DataTables/DataTables-1.10.13/',
 					src: ['images/*.{png,jpg,gif,svg}'],
 					dest: buildPathCSS
+				},
+				{
+					expand: true,
+					cwd: 'css/',
+					src: ['images/*.{png,jpg,gif,svg}'],
+					dest: buildPathCSS
 				}]
 			}
 		},

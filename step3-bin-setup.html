@@ -2,112 +2,69 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>Step3-bin Setup</title>
-    <link href="/css/easyfarm.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Step3-bin Setup</title>
+  <link href="/css/easyfarm.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- build:section header --><!-- /build -->
-
-<!--Start of red progress bar section -->
-<div id="step1" class="steps container"> <!-- step 1 -->
-<div class="row">
-<div class="col-md-9">
-</div>
-<div class="row">
-</div>
-<div class="col-md-1">
-</div>
-    <div class="col-md-10">
-    <progress class="progress progress-info" value="60" max="100" aria-describedby="example-caption-1"></progress>
-    <div class="text-xs-center lead" id="example-caption-1">Storage (Step 3 of 5)</div>
+  <!-- build:section header -->
+  <!-- /build -->
+  <!--Start of red progress bar section -->
+  <div id="step1" class="steps container">
+    <!-- step 1 -->
+    <div class="row g-mb-30">
+      <div class="col-md-10">
+        <progress class="progress progress-info" value="60" max="100" aria-describedby="example-caption-1"></progress>
+        <div class="text-xs-center lead" id="example-caption-1">Storage (Step 3 of 5)</div>
+      </div>
+    </div>
+    <!-- End of red progress bar section-->
+    <div class="row">
+      <div class="col-md-3">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Monthly Storage Fee</label>
+            <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="$">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Monthly Interests Loss</label>
+            <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="$">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Monthly Insurance Costs</label>
+            <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="$">
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-<div class="col-md-1">
-</div>
-</div>
-<!-- End of red progress bar section-->
-<!-- Start of 1st section of build bin progress bar -->
-
-</div>
-<!-- End of 1st section of build bin progress bar -->
-
-<div class="container white80">
-</div>
-
-<div class="container">
-<div class="row">
-<div class="col-md-9">
-<div class="row">
-<div class="col-md-3">
-
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Monthly Storage Fee</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="$">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <button class=" back-button click binsBtn" style=" width:100px" onclick="window.location.href='step2-bin-setup.html'">
+          Back
+        </button>
+      </div>
+      <div class="col-xs-3 offset-md-4 offset-xs-6">
+        <button class="click binsBtn" style=" width:100px" onclick="window.location.href='step4-bin-setup.html'">
+          Next
+        </button>
+      </div>
+    </div>
   </div>
-  </form>
-</div>
-
-<div class="col-md-3">
-
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Monthly Interests Loss</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="$">
-  </div>
-  </form>
-</div>
-
-<div class="col-md-4">
-
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput">Monthly Insurance Costs</label>
-    <input type="text" class="form-control input-lg" id="formGroupExampleInput" placeholder="$">
-  </div>
-  </form>
-</div>
-
-
-</div>
-</div>
-</div>
-</div>
-
-
-
-<!-- End of New Row -->
-<div class="container">
-<div class="row">
-<div class="col-md-offset-6 col-md-6">
-<div>
-<div class="row">
-<div class="col-md-3">
-<button class=" back-button click binsBtn" style=" width:100px" onclick="window.location.href='step2-bin-setup.html'">
-            Back
-          </button>
-</div>
-<div class="row">
-<div class="col-md-2">
-<button class="click binsBtn" style=" width:100px" onclick="window.location.href='step4-bin-setup.html'">
-            Next
-          </button>
-</div>
-
-</div>
-</div>
-</div>
-
   <!-- SCRIPTS -->
   <script async src="/js/easyfarm.js"></script>
-
-
 </body>
 
 </html>
